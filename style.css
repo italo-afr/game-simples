@@ -1,0 +1,30 @@
+answers-list {
+    padding: 0;
+    list-style: none;
+}
+
+body {
+    background-color: #303030;
+}
+
+.canvas {
+    display: flex;
+    padding-top: 50px;
+    justify-content: center;
+}
+
+
+#gameCanvas {
+    background-color: #1b1b1b;
+    margin-right: 20px;
+}
+
+.tabelaPontuacao {
+    background-color: #292929;
+    width: 290px;
+    text-align: center;
+}
+
+.pontuacaoTitulo {
+    color: #fff;
+}
