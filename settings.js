@@ -1,10 +1,11 @@
 const canvas = document.getElementById("gameCanvas");
 const player = canvas.getContext("2d");
-var UP = 38, DOWN = 40, LEFT = 37, RIGHT = 39;
+var UP = 38, DOWN = 40, LEFT = 37, RIGHT = 39; //Teste
 var playerPosicao = {
     x: 10,
     y: 10
 };
+
 
 playerRender();
 
