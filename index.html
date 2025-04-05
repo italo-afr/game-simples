@@ -2,19 +2,27 @@
 <html lang="pt-br">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Meu primeiro jogo</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
+    <audio id="somColeta" src="audio/collect.mp3" preload="auto"></audio>
+    <button id="botaoIniciar" style="position:absolute; top:20px; left:20px; z-index: 9999;">Iniciar Jogo</button>
+    
     <div class="canvas">
         <canvas id="gameCanvas" width="850" height="600">
-            <h1>Desculpe-me, seu navegador não suporta o elemento &lt;canvas&gt;</h1>
+            <h1>Seu navegador não suporta o elemento canvas.</h1>
         </canvas>
         <div class="tabelaPontuacao">
-            <H1 class="pontuacaoTitulo">Pontuação:</H1>
+            <h1 class="pontuacaoTitulo">Pontuação:</h1>
+            <p id="pontuacaoJogador" style="color:white; font-size: 20px;">Você: 0</p>
+            <ul id="rankingBots" style="color:white; padding-left: 0;"></ul>
         </div>
     </div>
-    <script src="settings.js"></script>
+    <script src="js/util.js"></script>
+    <script src="js/player.js"></script>
+    <script src="js/bots.js"></script>
+    <script src="js/coletaveis.js"></script>
+    <script src="js/main.js"></script>
 </body>
 </html>
