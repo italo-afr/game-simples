@@ -7,10 +7,12 @@
 </head>
 <body>
     <audio id="somColeta" src="audio/collect.mp3" preload="auto"></audio>
-    <button id="botaoIniciar" style="position:absolute; top:20px; left:20px; z-index: 9999;">Iniciar Jogo</button>
-    
+    <audio id="somMultiplo10" src="audio/10-collect.mp3" preload="auto"></audio>
+    <div id="telaInicio">
+        <button id="botaoIniciar">Iniciar Jogo</button>
+    </div>    
     <div class="canvas">
-        <canvas id="gameCanvas" width="850" height="600">
+        <canvas id="gameCanvas" width="860" height="600">
             <h1>Seu navegador não suporta o elemento canvas.</h1>
         </canvas>
         <div class="tabelaPontuacao">
@@ -19,10 +21,10 @@
             <ul id="rankingBots" style="color:white; padding-left: 0;"></ul>
         </div>
     </div>
-    <script src="js/util.js"></script>
-    <script src="js/player.js"></script>
-    <script src="js/bots.js"></script>
-    <script src="js/coletaveis.js"></script>
-    <script src="js/main.js"></script>
+<script src="js/util.js"></script>
+<script src="js/coletaveis.js"></script>
+<script src="js/bots.js"></script>
+<script src="js/player.js"></script>
+<script src="js/main.js"></script>
 </body>
 </html>

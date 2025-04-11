@@ -1,10 +1,3 @@
-function teleportar(obj) {
-    if (obj.x < 0) obj.x = canvas.width - tamanho;
-    else if (obj.x >= canvas.width) obj.x = 0;
-
-    if (obj.y < 0) obj.y = canvas.height - tamanho;
-    else if (obj.y >= canvas.height) obj.y = 0;
-}
 
 function atualizarPontuacao() {
     document.getElementById("pontuacaoJogador").innerText = `Você: ${pontuacao}`;
@@ -28,17 +21,18 @@ function renderizar() {
 
     ctx.fillStyle = "green";
     bolinhas.forEach(b => {
-        ctx.fillRect(b.x, b.y, tamanho, tamanho);
+    ctx.fillRect(b.x, b.y, tamanho, tamanho);
     });
+
 }
 
 function iniciarJogo() {
-    document.getElementById("botaoIniciar").style.display = "none";
+    document.getElementById("telaInicio").style.display = "none";
     window.addEventListener("keydown", movPlayer);
-
     setInterval(() => bots.forEach(mudarDirecaoBot), 1000);
     setInterval(moverBots, 300);
 }
+
 
 document.getElementById("botaoIniciar").addEventListener("click", () => {
     somColeta.play().then(() => {

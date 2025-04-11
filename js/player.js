@@ -1,5 +1,5 @@
-let playerPosicao = { x: posicaoAleatoria(), y: posicaoAleatoria() };
-let pontuacao = 0;
+window.playerPosicao = { x: posicaoAleatoria(), y: posicaoAleatoria() };
+window.pontuacao = 0;
 
 function movPlayer(e) {
     let tecla = e.keyCode;
@@ -8,7 +8,7 @@ function movPlayer(e) {
     if (tecla === 38) playerPosicao.y -= velocidade;
     if (tecla === 40) playerPosicao.y += velocidade;
 
-    teleportar(playerPosicao);
+    aplicarBarreiras(playerPosicao);
     checarColisaoBolinhas();
     renderizar();
 }
