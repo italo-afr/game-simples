@@ -48,11 +48,11 @@ Depois, abra o arquivo `index.html` com seu navegador preferido.
 
 ### Screenshot da interface
 
-![Screenshot](./assets/print.png)
+![Screenshot](assets/Screenshot.png)
 
 ### Gameplay em ação
 
-![Gameplay](./assets/gameplay.gif)
+![Gameplay](assets/Animation.gif)
 
 ## 🙌 Créditos
 
